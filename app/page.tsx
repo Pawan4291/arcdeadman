@@ -24,9 +24,11 @@ export default function Home() {
 
       <div className="flex gap-6">
 
-        <button className="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-xl font-semibold">
-          Create Vault
-        </button>
+        <a href="/create-vault">
+  <button className="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-xl font-semibold">
+    Create Vault
+  </button>
+</a>
 
         <button className="border border-gray-700 px-6 py-3 rounded-xl">
           Learn More

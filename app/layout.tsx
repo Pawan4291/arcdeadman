@@ -1,7 +1,8 @@
 "use client"
 
-import Header from "./components/Header"
 import "./globals.css"
+import Footer from "./components/Footer"
+import Header from "./components/Header"
 import '@rainbow-me/rainbowkit/styles.css'
 
 import { WagmiProvider } from 'wagmi'
@@ -23,11 +24,9 @@ export default function RootLayout({
         <WagmiProvider config={config}>
           <QueryClientProvider client={queryClient}>
             <RainbowKitProvider>
-
   <Header />
-
   {children}
-
+  <Footer />
 </RainbowKitProvider>
           </QueryClientProvider>
         </WagmiProvider>

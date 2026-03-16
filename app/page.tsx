@@ -1,5 +1,6 @@
 "use client"
 
+import { ConnectButton } from '@rainbow-me/rainbowkit'
 import { Shield, Clock } from "lucide-react"
 import { motion } from "framer-motion"
 

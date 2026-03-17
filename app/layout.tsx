@@ -1,17 +1,8 @@
-"use client"
-
 import "./globals.css"
-import Footer from "./components/Footer"
 import Header from "./components/Header"
+import Footer from "./components/Footer"
+import Providers from "./providers"
 import '@rainbow-me/rainbowkit/styles.css'
-
-import { WagmiProvider } from 'wagmi'
-import { config } from './lib/web3'
-import { RainbowKitProvider } from '@rainbow-me/rainbowkit'
-
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-
-const queryClient = new QueryClient()
 
 export default function RootLayout({
   children,
@@ -20,16 +11,26 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <WagmiProvider config={config}>
-          <QueryClientProvider client={queryClient}>
-            <RainbowKitProvider>
-  <Header />
-  {children}
-  <Footer />
-</RainbowKitProvider>
-          </QueryClientProvider>
-        </WagmiProvider>
+      <body className="bg-black text-white">
+
+        <Providers>
+
+          {/* FULL PAGE FLEX */}
+          <div className="min-h-screen flex flex-col">
+
+            <Header />
+
+            {/* THIS PUSHES FOOTER DOWN */}
+            <main className="flex-1 flex flex-col">
+              {children}
+            </main>
+
+            <Footer />
+
+          </div>
+
+        </Providers>
+
       </body>
     </html>
   )

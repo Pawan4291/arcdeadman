@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import AnimatedBackground from "./components/AnimatedBackground"
 import { motion } from "framer-motion"
 
@@ -32,11 +33,11 @@ export default function Home() {
 
             <div className="flex gap-6">
 
-              <a href="/create-vault">
-                <button className="bg-blue-500 hover:bg-blue-600 px-8 py-4 rounded-xl font-semibold text-lg shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 transition duration-300">
-                  Create Vault
-                </button>
-              </a>
+              <Link href="/create-vault">
+  <button className="bg-blue-500 hover:bg-blue-600 px-8 py-4 rounded-xl font-semibold text-lg">
+    Create Vault
+  </button>
+</Link>
 
               <button className="border border-gray-700 px-8 py-4 rounded-xl text-lg">
                 Learn More
@@ -247,15 +248,11 @@ export default function Home() {
             Powered by Arc automation and encrypted recovery logic.
           </p>
 
-          <a href="/create-vault">
-
-            <button className="bg-blue-500 hover:bg-blue-600 px-10 py-4 rounded-xl text-lg font-semibold shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 transition duration-300">
-
-              Create Your Vault
-
-            </button>
-
-          </a>
+          <Link href="/create-vault">
+  <button className="bg-blue-500 hover:bg-blue-600 px-10 py-4 rounded-xl text-lg font-semibold shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 transition duration-300">
+    Create Your Vault
+  </button>
+</Link>
 
         </div>
 

@@ -1,24 +1,29 @@
-import { getDefaultConfig } from '@rainbow-me/rainbowkit'
-import { http } from 'viem'
+import { createConfig, http } from "wagmi"
 
 const arcTestnet = {
-  id: 11155111,
+  id: 5042002,
   name: "Arc Testnet",
   network: "arc-testnet",
   nativeCurrency: {
     name: "USDC",
     symbol: "USDC",
-    decimals: 6,
+    decimals: 18,
   },
   rpcUrls: {
-    default: { http: ["https://rpc.arc.network"] },
+    default: {
+      http: ["https://rpc.testnet.arc.network"],
+    },
+  },
+  blockExplorers: {
+    default: {
+      name: "ArcScan",
+      url: "https://testnet.arcscan.xyz",
+    },
   },
 }
 
-export const config = getDefaultConfig({
-  appName: "ArcDeadman",
-  projectId: "arcdeadman",
-  chains: [arcTestnet],
+export const config = createConfig({
+  chains: [arcTestnet], // 🔥 THIS IS THE FIX
   transports: {
     [arcTestnet.id]: http(),
   },

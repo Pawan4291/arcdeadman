@@ -26,7 +26,7 @@ export default function Home() {
             </h1>
 
             <p className="text-gray-400 text-lg max-w-xl mb-10">
-              ArcDeadman is a decentralized dead-man switch for crypto wallets.
+              LastKey is a decentralized safety system switch for crypto wallets.
               If your wallet becomes inactive, assets automatically transfer
               to a recovery wallet using Arc automation.
             </p>
@@ -101,7 +101,7 @@ export default function Home() {
             <span className="absolute -inset-3 blur-xl bg-blue-500/10"></span>
 
             <span className="relative">
-              How Deadman Vault Works
+              How LastKey Works
             </span>
 
           </h2>
@@ -244,7 +244,7 @@ export default function Home() {
           </h2>
 
           <p className="text-gray-400 text-lg mb-6 max-w-xl mx-auto">
-            ArcDeadman ensures your assets remain recoverable even if your wallet becomes inactive.
+            LastKey ensures your assets remain recoverable even if your wallet becomes inactive.
             Powered by Arc automation and encrypted recovery logic.
           </p>
 

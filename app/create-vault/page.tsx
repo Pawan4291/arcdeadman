@@ -84,7 +84,7 @@ export default function CreateVault() {
         <div className="max-w-4xl mx-auto mb-16">
 
           <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
-            Create Your <span className="text-blue-500">Deadman Vault</span>
+            Create Your <span className="text-blue-500">LastKey Vault</span>
           </h1>
 
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">

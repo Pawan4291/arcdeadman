@@ -41,7 +41,7 @@ export default function Dashboard() {
             Connect Your <span className="text-blue-500">Wallet</span>
           </h2>
           <p className="text-gray-400">
-            Access your ArcDeadman dashboard
+            Access your LastKey dashboard
           </p>
         </div>
       </main>
@@ -142,7 +142,7 @@ export default function Dashboard() {
             className="text-center mb-20"
           >
             <h1 className="text-6xl lg:text-7xl font-bold leading-tight">
-              ArcDeadman <span className="text-blue-500">Dashboard</span>
+              LastKey <span className="text-blue-500">Dashboard</span>
             </h1>
 
             <p className="text-gray-400 mt-4 text-lg">
